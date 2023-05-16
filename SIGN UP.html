@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SIGN PAGE</title>
+    </head>
+    <style>
+    body {
+        background-image: url(https://cutewallpaper.org/25/bbt-car-hd-wallpaper/231973839.jpg);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .form {
+  position: absolute;
+  top: 14%;
+  width: 36%;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 28px;
+  color: #4F46E5;
+  font-weight: 500;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before,.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #4F46E5;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: #4F46E5;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: #4F46E5;
+}
+.signin:hover a {
+  color: greenyellow;
+}
+
+.signin a:hover {
+  text-decoration: underline #4F46E5;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 95%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: #4F46E5;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+}
+
+.submit:hover {
+  color: #4F46E5;
+  background-color: white;
+  border: 1px dashed #4F46E5;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+nav {
+  position: fixed;
+  background-color: rgb(22, 34, 59);
+  top: 0px;
+  height: 80px;
+  width: 100%;
+  z-index: 999;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+li img {
+    position: relative;
+    left: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+ul a img {
+    position: relative;
+    color: rgb(22, 34, 59);
+    top: 8px;
+    height: 200px;
+    width: 350px;
+}
+button a img {
+    position: relative;
+    color: rgb(22, 34, 59);
+    top: 0px;
+    left: 5px;
+    height: 80px;
+    width: 300px;
+}
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  left: 10px;
+}
+
+nav input {
+  border: none;
+  padding: 8px;
+  width: 500px;
+  height: 25px;
+  right: 0px;
+  border-radius: 4px;
+}
+
+nav .search button {
+  position: relative;
+  background: none;
+  border: none;
+  top: 8px;
+  right: 55px;
+  cursor: pointer;
+}
+nav button {
+    position: relative;
+  background: none;
+  border: none;
+  top: 5px;
+  right: 40px;
+  cursor: pointer;
+}
+nav button img {
+    position: relative;
+    width: 50px;
+    height: 40px;
+}
+li a {
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+li:hover a {
+    display: block;
+    background-color: black;
+    width: 100%;    
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li:hover ul.dropdown {
+    display: list-item;
+    width: 100px;
+    height: 30px;
+}
+ul.dropdown li a {
+    background-color: rgb(22, 34, 59);
+    width: 100px;
+    height: 20px;
+}
+ul.dropdown li:hover a {
+    background-color: black;
+    width: 100%;
+    height: 30px;
+}
+.m1{
+    border: 5px black solid;
+}
+.img {
+    width: 40px;
+    height: 28px;
+}
+    </style>
+    <body>
+        <header>
+            <nav>
+              <ul>
+                <a href="C:\Users\hp\Desktop\Project.html.css.js\Untitled-1.html" id="a1"><img src="C:\Users\hp\Downloads\hhh-removebg-preview.png" alt=""></a>
+                <li>
+                    <a href="#">Categorey ∇</a>
+                    <ul class="dropdown">
+                        <li><a href="Untitled-1.html.#no" >Normal Cars</a></li>
+                        <li><a href="Untitled-1.html.#lu">Luxury Cars</a></li>
+                        <li><a href="Untitled-1.html.#sup">Super Cars</a></li>
+                    </ul>
+                <li><a href="Untitled-1.html.#contact-us">Contact Us</a></li>
+                <div class="search" >
+                    <form action="#" method="get">
+                        <input type="text" name="search" placeholder="Search...">
+                        <button type="submit"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAADy8vL8/PzY2Njj4+OZmZlDQ0McHBzx8fHd3d3g4OD39/eMjIxpaWlTU1PQ0NAQEBC4uLgkJCQ5OTmgoKAvLy+srKy+vr4VFRVhYWFcXFzExMR0dHSTk5MYGBiCgoJ8fHwpKSlLbtqKAAAEN0lEQVR4nO3c63qiMBAGYAQEUfAA6mptrXr/F7li11Yng0ASliH93r+lPDPmHAKeBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADASP0k8dO+o+hEEO6y+SLeFpNJsY0X82wXBn3HZFEYxSNGHC37jsyK5YnL7u60HHhR+hu29B6tN0nfUerzT6u6/G6ygeYYZI3S+8pxiHU13zdP8CrvO962kkWr/K4O475jbiVvm9/QivGsk+BodO477qb82hGiSuz3HXsj44tugqNRMYTGOG02BlZYTfuOv9bUJL+S9BTHRiV4I7ui+i/a4FuUzxL/Kpnl0Vv1dYXo7qaqFy2OIb00zIqKi2PBU7gzH/Lhnb/8/cBfL3dc5GcyC6X4foR8jlJnNwkX7Kqi/O7e2a5J6HKKm2x/1Lap4IMr9/8Rb2tcHf3T5B//DKSeBkx1a7jTtFT/cyJwy5FZ0Tceu8fq/2ZdxqqF6WZaTE6YFMWN++qeYavNULWiSivERGmFjTqZH2p3I6wQNzS+j7Z3UAaNTRdxagvWJLxV67llMCG3WHcRqDalGdXMZDjvRg25a7SfOejchM6JTnZjNEN//heT7WqhcU3vDo1Nqwg9jy6LtX6nbkTmrbBEW2JkN0oTZGlf6N5n+3yf2GaMRgLy2x91b0TntjaDNEKboXb7oYOOmIa4s/bTkxvt7MVohlSuN/07kSFRu7rbNn+Oy6ALJJ3y3F6MZsgvb7ADQXZCxHSmZLCY6d+J9FlSJt8pGcYMtgL95ztdhMzbfLI9b7B0JSNrIWQ/Kpl0leFEyDrf/Qzdr6Xu9zTujxa/YMR3f9bm/szb/dWT+ytguouh/VBF7C6G+ztRv2A30dKOMD16IqYZeh3t6u9tR2nC/Scz7j9d88yfkKaf5BZipt1fnH/K3cVJBSGr32/Onzahq/NSi5Uwc2JIWhEanvpSz8SJK0LrJ/ek7NA8cv70pTqtLNWfoE25E7SaE9uusaegJzWzmx0d6G+EnoLWOcnOv6a4MtiQ7NaZjbf12wiSX3+qeqNkmynd6jLbVlx8I7UU6SOMR4soD/3gyg/zqP4lWqmvP1l4s+tOakU1fjvvV6UotS2avCU7kBRT7TedFVIrqnd2P0WtLw6w3bDUiuolldOVKodkxqYothS9nL5d8NJnuVziX3SXm2J6bJ7gv6+3zNg/iq2o1xwbfqEm+z6fwuzXjORO4Eppk68oPZ6/GVpFLS1ffUppr3wJi50SyV1MfQkqv2bGrY35iiq4Ld6Fu+M8Xl/KL9Jd1vH8uKtc+Q+uu3kSpL6f1m1O8W1R0uNSY3wpOpUi2xYFPdW3gJnAuZUg0xZdS1CpqGJOuFk0drsES9O94wk+TOBcTfC7orrYBu9ug4a7JVi6DhpuJ3hN0fUEAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgwP4Celgqs7S97q0AAAAASUVORK5CYII=" alt="" class="img"></button>
+                    </form>
+                </div>
+                <button ><a href="C:\Users\hp\Desktop\Project.html.css.js\login.html"><img src="https://flaticons.net/icon.php?slug_category=application&slug_icon=user-login" alt="Login"></a></button>
+              </ul>
+            </nav>
+        </header>  
+        <form class="form">
+            <p class="title">Register </p>
+            <p class="message">Signup now and get full access to our website. </p>
+                <div class="flex">
+                <label>
+                    <input required="" placeholder="" type="text" class="input">
+                    <span>Firstname</span>
+                </label>
+        
+                <label>
+                    <input required="" placeholder="" type="text" class="input">
+                    <span>Lastname</span>
+                </label>
+            </div>  
+                    
+            <label>
+                <input required="" placeholder="" type="email" class="input">
+                <span>Email</span>
+            </label> 
+                
+            <label>
+                <input required="" placeholder="" type="password" class="input" name="pswd1">
+                <span>Password</span>
+            </label>
+            <label>
+                <input required="" placeholder="" type="password" class="input" name="pswd2">
+                <span>Confirm password</span>
+            </label>
+            <button class="submit" onclick="matchPassword() ">Submit</button>
+            <p class="signin">Already have an acount ? <a href="login.html">Login</a> </p>
+        </form>
+        <script>
+            function matchPassword() {  
+  var pw1 = document.getElementById("pswd1");  
+  var pw2 = document.getElementById("pswd2");  
+  if(pw1 == pw2)  
+  {   
+    alert("Passwords did not match");
+  } else {  
+    alert("Password created successfully"); 
+  }  
+} 
+        </script>
+    </body>
+</html>
