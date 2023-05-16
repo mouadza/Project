@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GLC </title>
+</head>
+<style>
+body {
+background-size: 100%;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-size: 100%;
+}
+nav {
+  position: fixed;
+  background-color: rgb(22, 34, 59);
+  top: 0px;
+  height: 80px;
+  width: 100%;
+  z-index: 999;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+ul li {
+    display: block;
+    position: relative;
+}
+li img {
+    position: relative;
+    left: 0;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+ul a img {
+    position: relative;
+    color: rgb(22, 34, 59);
+    top: 8px;
+    height: 200px;
+    width: 350px;
+}
+button a img {
+    position: relative;
+    color: rgb(22, 34, 59);
+    top: 0px;
+    left: 5px;
+    height: 80px;
+    width: 300px;
+}
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  left: 10px;
+}
+
+nav input {
+  border: none;
+  padding: 8px;
+  width: 500px;
+  height: 40px;
+  right: 0px;
+  border-radius: 4px;
+}
+nav .search button {
+  position: relative;
+  background: none;
+  border: none;
+  top: 8px;
+  right: 55px;
+  cursor: pointer;
+}
+nav button {
+    position: relative;
+  background: none;
+  border: none;
+  top: 5px;
+  right: 40px;
+  cursor: pointer;
+}
+nav button img {
+    position: relative;
+    width: 50px;
+    height: 40px;
+}
+li a {
+    display: block;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+li:hover a {
+    display: block;
+    background-color: black;
+    width: 100%;    
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ul li ul.dropdown {
+    position: absolute;
+    z-index: 999;
+    height: 100%;
+    display: none;
+}
+ul li:hover ul.dropdown li {
+    background-color: rgb(22, 34, 59);
+}
+ul li:hover ul.dropdown {
+    display: list-item;
+}
+ul.dropdown li a {
+    background-color: rgb(22, 34, 59);
+    width: 100%;
+    height: 20px;
+}
+ul.dropdown li:hover a {
+    background-color: black;
+    width: 100%;
+    height: 30px;
+}
+.m1{
+    border: 5px black solid;
+}
+.img {
+    width: 40px;
+    height: 28px;
+}
+main {
+    position: relative;
+    background-image: url(https://images.pexels.com/photos/13867440/pexels-photo-13867440.jpeg?cs=srgb&dl=pexels-arnico-estudio-13867440.jpg&fm=jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    padding-left: 0px;
+    top: 60px;
+}
+head {
+    position: absolute;
+    justify-content: space-between;
+    top: 0px;
+}
+.head h1{
+    background-color: rgb(22, 34, 59);
+    color: #fff;
+    padding-bottom: 5px;
+    height: 40px;
+  text-align: center;
+}
+.head  h2{
+    position: absolute;
+    background-color: rgb(22, 34, 59);
+    color: #fff;
+    bottom: 94%;
+    left: 550px;
+    text-align: center;
+}
+h2:hover{
+    color: black;
+}
+.car-details {
+    position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 3%;
+  gap: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  top: 50%;
+}
+.mySlides {
+    position: relative;
+  display: none;
+  left: 25%;
+  width: 45%;
+  height: 20%;
+}
+.container:hover .prev{
+    background-color: white;
+}
+.container:hover .next{
+    background-color: white;
+}
+.container:hover .prev:hover{
+    background-color: blue;
+    color: white;
+}
+.container:hover .next:hover{
+    background-color: blue;
+    color: white;
+}
+.cursor {
+  cursor: pointer;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.numbertext {
+  color: #f2f2f2;
+  padding: 8px 12px;
+  position: absolute;
+  width: 10px;
+  top: 0;
+}
+.caption-container {
+    position: relative;
+  text-align: center;
+  background-color: #fff;
+  padding: 2px 16px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+    position: relative;
+  float: left;
+  width: 12%;
+  left: 23.5%;
+  
+}
+.demo {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.specs {
+position: relative;
+  width: 40%;
+  background-color: #f2f2f2;
+  padding: 50px;
+  left: 100px;
+  top: 10px;
+  padding: 30px;
+}
+.specs h2 { 
+    position: relative;
+    text-align: center;
+    left: 30%;
+  margin-top: 0;
+  width: 200px;
+  border: dashed 1px ;
+}
+.specs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.specs li {
+  margin-bottom: 10px;
+}
+table {
+  width: 100%;
+}
+
+th, td {
+    position: relative;
+  padding: 15px;
+  left: 20px;
+  text-align: left;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+.actions {
+    position: relative;
+    left: 40%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+tr th{
+    border-left: solid 1px grey;
+}
+#tr th{
+    border-bottom: #333 solid 4px;
+}
+.buy {
+    position: relative;
+  border: none;
+  background-color: #4F46E5;
+  padding: 10px;
+  text-decoration: none ;
+  top: 15px;
+  left: 3%;
+  width: 100%;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+}
+.buy a{
+    text-decoration: none;
+    color: white;
+}
+.buy a:hover{
+    text-decoration: none;
+    color: #4F46E5;
+}
+.buy:hover {
+  color: black;
+  background-color: #f2f2f2;
+  border: 1px dashed #4F46E5;
+  cursor: pointer;
+  transition: 0.5s;
+}
+</style>
+<body>	
+    <header>
+        <nav>
+          <ul>
+            <a href="Untitled-1.html" id="a1"><img src="C:\Users\hp\Downloads\hhh-removebg-preview.png" alt=""></a>
+            <li>
+				<a href="#">Categorey ∇</a>
+				<ul class="dropdown">
+					<li><a href="Untitled-1.html.#no" >Normal Cars</a></li>
+					<li><a href="Untitled-1.html.#lu">Luxury Cars</a></li>
+					<li><a href="Untitled-1.html.#sup">Super Cars</a></li>
+				</ul>
+            </li>
+            <li><a href="Untitled-1.html.#contact-us">Contact Us</a></li>
+            <div class="search">
+                <form action="#" method="get">
+                    <input type="text" name="search" placeholder="Search...">
+                    <button type="submit"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAADy8vL8/PzY2Njj4+OZmZlDQ0McHBzx8fHd3d3g4OD39/eMjIxpaWlTU1PQ0NAQEBC4uLgkJCQ5OTmgoKAvLy+srKy+vr4VFRVhYWFcXFzExMR0dHSTk5MYGBiCgoJ8fHwpKSlLbtqKAAAEN0lEQVR4nO3c63qiMBAGYAQEUfAA6mptrXr/F7li11Yng0ASliH93r+lPDPmHAKeBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADASP0k8dO+o+hEEO6y+SLeFpNJsY0X82wXBn3HZFEYxSNGHC37jsyK5YnL7u60HHhR+hu29B6tN0nfUerzT6u6/G6ygeYYZI3S+8pxiHU13zdP8CrvO962kkWr/K4O475jbiVvm9/QivGsk+BodO477qb82hGiSuz3HXsj44tugqNRMYTGOG02BlZYTfuOv9bUJL+S9BTHRiV4I7ui+i/a4FuUzxL/Kpnl0Vv1dYXo7qaqFy2OIb00zIqKi2PBU7gzH/Lhnb/8/cBfL3dc5GcyC6X4foR8jlJnNwkX7Kqi/O7e2a5J6HKKm2x/1Lap4IMr9/8Rb2tcHf3T5B//DKSeBkx1a7jTtFT/cyJwy5FZ0Tceu8fq/2ZdxqqF6WZaTE6YFMWN++qeYavNULWiSivERGmFjTqZH2p3I6wQNzS+j7Z3UAaNTRdxagvWJLxV67llMCG3WHcRqDalGdXMZDjvRg25a7SfOejchM6JTnZjNEN//heT7WqhcU3vDo1Nqwg9jy6LtX6nbkTmrbBEW2JkN0oTZGlf6N5n+3yf2GaMRgLy2x91b0TntjaDNEKboXb7oYOOmIa4s/bTkxvt7MVohlSuN/07kSFRu7rbNn+Oy6ALJJ3y3F6MZsgvb7ADQXZCxHSmZLCY6d+J9FlSJt8pGcYMtgL95ztdhMzbfLI9b7B0JSNrIWQ/Kpl0leFEyDrf/Qzdr6Xu9zTujxa/YMR3f9bm/szb/dWT+ytguouh/VBF7C6G+ztRv2A30dKOMD16IqYZeh3t6u9tR2nC/Scz7j9d88yfkKaf5BZipt1fnH/K3cVJBSGr32/Onzahq/NSi5Uwc2JIWhEanvpSz8SJK0LrJ/ek7NA8cv70pTqtLNWfoE25E7SaE9uusaegJzWzmx0d6G+EnoLWOcnOv6a4MtiQ7NaZjbf12wiSX3+qeqNkmynd6jLbVlx8I7UU6SOMR4soD/3gyg/zqP4lWqmvP1l4s+tOakU1fjvvV6UotS2avCU7kBRT7TedFVIrqnd2P0WtLw6w3bDUiuolldOVKodkxqYothS9nL5d8NJnuVziX3SXm2J6bJ7gv6+3zNg/iq2o1xwbfqEm+z6fwuzXjORO4Eppk68oPZ6/GVpFLS1ffUppr3wJi50SyV1MfQkqv2bGrY35iiq4Ld6Fu+M8Xl/KL9Jd1vH8uKtc+Q+uu3kSpL6f1m1O8W1R0uNSY3wpOpUi2xYFPdW3gJnAuZUg0xZdS1CpqGJOuFk0drsES9O94wk+TOBcTfC7orrYBu9ug4a7JVi6DhpuJ3hN0fUEAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgwP4Celgqs7S97q0AAAAASUVORK5CYII=" alt="" class="img"></button>
+                </form>
+            </div>
+            <button ><a href="login.html"><img src="https://flaticons.net/icon.php?slug_category=application&slug_icon=user-login" alt="Login"></a></button>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="head">
+        <h1>Mercedes-Benz GLC</h1>
+        <a href="Mercedes-Benz.html"><h2><< BACK </h2></a>
+    </div>
+<div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img class="image" src="https://assets-eu-01.kc-usercontent.com/3b3d460e-c5ae-0195-6b86-3ac7fb9d52db/2afce7c9-c300-47b0-919b-8465ef2de601/Mercedes%20GLC%20Coupe%20%288%29.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img class="image" src="https://i.ytimg.com/vi/BR_wVyz2uNk/maxresdefault.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="https://hips.hearstapps.com/hmg-prod/images/2020-mercedes-amg-glc43-coupe-109-1591891295.jpg?crop=0.660xw:0.495xh;0.115xw,0.394xh&resize=1200:*" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="https://media.ed.edmunds-media.com/mercedes-benz/glc-class-coupe/2020/oem/2020_mercedes-benz_glc-class-coupe_4dr-suv_amg-glc-43_d_oem_1_815.jpg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img class="image" src="https://assets-eu-01.kc-usercontent.com/3b3d460e-c5ae-0195-6b86-3ac7fb9d52db/2afce7c9-c300-47b0-919b-8465ef2de601/Mercedes%20GLC%20Coupe%20%288%29.jpg" style="width:100%" onclick="currentSlide(1)" >
+      </div>
+      <div class="column">
+        <img class="image" src="https://i.ytimg.com/vi/BR_wVyz2uNk/maxresdefault.jpg" style="width:100%" onclick="currentSlide(2)" >
+      </div>
+      <div class="column">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/2020-mercedes-amg-glc43-coupe-109-1591891295.jpg?crop=0.660xw:0.495xh;0.115xw,0.394xh&resize=1200:*" style="width:100%" onclick="currentSlide(3)" >
+      </div>
+      <div class="column">
+        <img src="https://media.ed.edmunds-media.com/mercedes-benz/glc-class-coupe/2020/oem/2020_mercedes-benz_glc-class-coupe_4dr-suv_amg-glc-43_d_oem_1_815.jpg" style="width:100%" onclick="currentSlide(4)" >
+      </div>
+    </div>
+  </div>
+  <div class="car-details">
+          <div class="specs" >
+            <h2>Specifications</h2>
+            <h4>1/2</h4>
+            <table>
+                <tr id="tr">
+                  <th>Specs</th>
+                  <th>Value</th>
+                </tr>
+                <tr>
+                  <th>Color</th>
+                  <td>Orange</td>
+                </tr>
+                <tr>
+                  <th>Model</th>
+                  <td>Compact</td>
+                </tr>
+                <tr>
+                  <th>Engine</th>
+                  <td>1.0L</td>
+                </tr>
+                <tr>
+                    <th>Horse-Power</th>
+                    <td>130hp</td>
+                  </tr>
+                  <tr>
+                    <th>TransmissionType</th>
+                    <td>Manuel</td>
+                  </tr>
+                  <tr>
+                    <th>Max-Speed</th>
+                    <td>190 km/h</td>
+                  </tr>
+                  <th>Body Type</th>
+                  <td>Hatchback</td>
+                </tr>
+                <tr>
+                  <th>Seating Capacity</th>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <th>Engine Options</th>
+                  <td>Petrol, Diesel</td>
+                </tr>
+                <tr>
+                  <th>Engine Displacement</th>
+                  <td>1.0 L, 1.5 L</td>
+                </tr>
+                <tr>
+                    <th>Fuel Type</th>
+                    <td>Petrol, Diesel</td>
+                  </tr>
+              </table>
+            </div>
+                <div class="specs">
+                    <h4>2/2</h4>
+                    <table>
+              <tr>
+                <th>Maximum Power</th>
+                <td>75 bhp - 109 bhp</td>
+              </tr>
+              <tr>
+                <th>Maximum Torque</th>
+                <td>95 Nm - 175 Nm</td>
+              </tr>
+              <tr>
+                <th>Transmission Options</th>
+                <td>5-speed Manual, 6-speed Manual, 7-speed Automatic</td>
+              </tr>
+              <tr>
+                <th>Fuel Efficiency</th>
+                <td>17.75 km/l - 21.49 km/l (Petrol)<br>21.49 km/l - 27.78 km/l (Diesel)</td>
+              </tr>
+              <tr>
+                <th>Width</th>
+                <td>1682 mm</td>
+              </tr>
+              <tr>
+                <th>Height</th>
+                <td>1469 mm</td>
+              </tr>
+              <tr>
+                <th>Wheelbase</th>
+                <td>2470 mm</td>
+              </tr>
+              <tr>
+                <th>Ground Clearance</th>
+                <td>165 mm</td>
+              </tr>
+              <tr>
+                <th>Boot Space</th>
+                <td>280 liters</td>
+              </tr>
+              <tr>
+                <th>Fuel Tank Capacity</th>
+                <td>45 liters</td>
+              </tr>
+              <div >
+                <table>
+                    <tr>
+                        <th><b> Price:</b></th>
+                        <td><b> $90,000</b></td>
+                    </tr>
+                </table>
+                <button class="buy"><a href="">BUY NOW</a></button>
+            </div>
+              </table>
+        </div>
+            </div>
+        </div><br><br>
+        </div>
+    </main> 
+    <script src="C:\Users\hp\Desktop\Project.html.css.js\scr.js"></script>
+</body>
+</html>
