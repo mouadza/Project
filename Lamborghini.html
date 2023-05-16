@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lamborghini Cars</title>
+</head>
+	<style>
+body {
+background-size: 100%;
+background-image: url(https://wallpaperaccess.com/full/496391.jpg);
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-size: 100%;
+}
+h1 {
+    position: relative;
+    border-style: solid white;
+    background-size: 100%;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/708/628/887/bmw-m4-cs-bmw-blue-rear-view-wallpaper-preview.jpg);
+    left: 5%;
+    top: 20px;
+    color: azure;
+    padding: 20px;
+    width: 380px;
+}
+.div01 h1 {
+  position: relative;
+  width: 500px;
+  height: 35px;
+}
+nav {
+  position: fixed;
+  background-color: rgb(22, 34, 59);
+  top: 0px;
+  height: 80px;
+  width: 100%;
+  z-index: 999;
+}
+nav:hover {
+    background-color: rgb(22, 34, 59);
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+li img {
+    position: relative;
+    left: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+ul a img {
+    position: relative;
+    color: rgb(22, 34, 59);
+    top: 8px;
+    height: 200px;
+    width: 350px;
+}
+button a img {
+    position: relative;
+    color: rgb(22, 34, 59);
+    top: 0px;
+    left: 5px;
+    height: 80px;
+    width: 300px;
+}
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  left: 10px;
+}
+
+nav input {
+  border: none;
+  padding: 8px;
+  width: 500px;
+  height: 25px;
+  right: 0px;
+  border-radius: 4px;
+}
+
+nav .search button {
+  position: relative;
+  background: none;
+  border: none;
+  top: 8px;
+  right: 55px;
+  cursor: pointer;
+}
+nav button {
+    position: relative;
+  background: none;
+  border: none;
+  top: 5px;
+  right: 40px;
+  cursor: pointer;
+}
+nav button img {
+    position: relative;
+    width: 50px;
+    height: 40px;
+}
+li a {
+    display: block;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+li:hover a {
+    display: block;
+    background-color: black;
+    width: 100%;    
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li:hover ul.dropdown {
+    display: list-item;
+    width: 100px;
+    height: 30px;
+}
+ul.dropdown li a {
+    background-color: rgb(22, 34, 59);
+    width: 80px;
+    height: 20px;
+}
+ul.dropdown li:hover a {
+    background-color: black;
+    width: 80px;
+    height: 30px;
+}
+.m1{
+    border: 5px black solid;
+}
+.img {
+    width: 40px;
+    height: 28px;
+}
+main h2 {
+    color: #fff;
+}
+.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+.image-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 45%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(75%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.image-wrapper:hover img {
+  position: relative;
+  filter: blur(4px) brightness(80%);
+  bottom: 40px;
+}
+.image-wrapper:hover {
+  position: relative;
+  bottom: 20px;
+}
+
+.button {
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  text-shadow: 10px;
+  border: 1px solid #000;
+  text-decoration: none;
+}
+.button h2 {
+    position: relative;
+    visibility: hidden;
+    text-align: center;
+    top: 80%;
+}
+.button:hover h2{
+    visibility: visible;
+    background-color: rgb(22, 34, 59);
+    padding-top: 5px;
+    height: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+}
+footer {
+  background-color: rgb(22, 34, 59);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 120px;
+}
+
+.social-media-section li {
+  font-size: 24px;
+}
+
+.social-media-section li a {
+  background: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-media-section li a:hover {
+  background-color: none;
+}
+.fab {
+position: relative;
+  font-size: 24px;
+  margin: 0 10px;
+  left: 430px;
+}
+.fab img {
+    position: relative;
+    width: 80px;
+    height: 90px;
+}
+.contact-section h2 {
+    position: relative;
+    border: solid 2px black;
+    left: 38%;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/708/628/887/bmw-m4-cs-bmw-blue-rear-view-wallpaper-preview.jpg);
+    width: 250px;
+    height: 50px;
+}
+#urus {
+    position: relative;
+    left: 30%;
+}
+
+	</style>
+<body>	
+    <header>
+        <nav>
+          <ul>
+            <a href="Untitled-1.html" id="a1"><img src="C:\Users\hp\Downloads\hhh-removebg-preview.png" alt=""></a>
+            <li>
+				<a href="#">Cars ∇</a>
+				<ul class="dropdown">
+					<li><a href="#se">SEDAN</a></li>
+					<li><a href="#suv">SUVs</a></li>
+				</ul>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <div class="search" >
+                <form action="#" method="get">
+                    <input type="text" name="search" placeholder="Search...">
+                    <button type="submit"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAADy8vL8/PzY2Njj4+OZmZlDQ0McHBzx8fHd3d3g4OD39/eMjIxpaWlTU1PQ0NAQEBC4uLgkJCQ5OTmgoKAvLy+srKy+vr4VFRVhYWFcXFzExMR0dHSTk5MYGBiCgoJ8fHwpKSlLbtqKAAAEN0lEQVR4nO3c63qiMBAGYAQEUfAA6mptrXr/F7li11Yng0ASliH93r+lPDPmHAKeBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADASP0k8dO+o+hEEO6y+SLeFpNJsY0X82wXBn3HZFEYxSNGHC37jsyK5YnL7u60HHhR+hu29B6tN0nfUerzT6u6/G6ygeYYZI3S+8pxiHU13zdP8CrvO962kkWr/K4O475jbiVvm9/QivGsk+BodO477qb82hGiSuz3HXsj44tugqNRMYTGOG02BlZYTfuOv9bUJL+S9BTHRiV4I7ui+i/a4FuUzxL/Kpnl0Vv1dYXo7qaqFy2OIb00zIqKi2PBU7gzH/Lhnb/8/cBfL3dc5GcyC6X4foR8jlJnNwkX7Kqi/O7e2a5J6HKKm2x/1Lap4IMr9/8Rb2tcHf3T5B//DKSeBkx1a7jTtFT/cyJwy5FZ0Tceu8fq/2ZdxqqF6WZaTE6YFMWN++qeYavNULWiSivERGmFjTqZH2p3I6wQNzS+j7Z3UAaNTRdxagvWJLxV67llMCG3WHcRqDalGdXMZDjvRg25a7SfOejchM6JTnZjNEN//heT7WqhcU3vDo1Nqwg9jy6LtX6nbkTmrbBEW2JkN0oTZGlf6N5n+3yf2GaMRgLy2x91b0TntjaDNEKboXb7oYOOmIa4s/bTkxvt7MVohlSuN/07kSFRu7rbNn+Oy6ALJJ3y3F6MZsgvb7ADQXZCxHSmZLCY6d+J9FlSJt8pGcYMtgL95ztdhMzbfLI9b7B0JSNrIWQ/Kpl0leFEyDrf/Qzdr6Xu9zTujxa/YMR3f9bm/szb/dWT+ytguouh/VBF7C6G+ztRv2A30dKOMD16IqYZeh3t6u9tR2nC/Scz7j9d88yfkKaf5BZipt1fnH/K3cVJBSGr32/Onzahq/NSi5Uwc2JIWhEanvpSz8SJK0LrJ/ek7NA8cv70pTqtLNWfoE25E7SaE9uusaegJzWzmx0d6G+EnoLWOcnOv6a4MtiQ7NaZjbf12wiSX3+qeqNkmynd6jLbVlx8I7UU6SOMR4soD/3gyg/zqP4lWqmvP1l4s+tOakU1fjvvV6UotS2avCU7kBRT7TedFVIrqnd2P0WtLw6w3bDUiuolldOVKodkxqYothS9nL5d8NJnuVziX3SXm2J6bJ7gv6+3zNg/iq2o1xwbfqEm+z6fwuzXjORO4Eppk68oPZ6/GVpFLS1ffUppr3wJi50SyV1MfQkqv2bGrY35iiq4Ld6Fu+M8Xl/KL9Jd1vH8uKtc+Q+uu3kSpL6f1m1O8W1R0uNSY3wpOpUi2xYFPdW3gJnAuZUg0xZdS1CpqGJOuFk0drsES9O94wk+TOBcTfC7orrYBu9ug4a7JVi6DhpuJ3hN0fUEAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgwP4Celgqs7S97q0AAAAASUVORK5CYII=" alt="" class="img"></button>
+                </form>
+            </div>
+            <button ><a href="C:\Users\hp\Desktop\Project.html.css.js\login.html"><img src="https://flaticons.net/icon.php?slug_category=application&slug_icon=user-login" alt="Login"></a></button>
+          </ul>
+        </nav>
+    </header><br><br><br>
+    <h1 id="se">Sedan Lamborghini :</h1><br> 
+	<main>
+        <div class="container">
+            <div class="image-wrapper">
+                <img class="image" src="https://hips.hearstapps.com/hmg-prod/images/2022-lamborghini-aventador-109-1625607587.jpg?crop=0.721xw:0.541xh;0.194xw,0.305xh&resize=1200:*" alt="Image 1">
+                <a class="button" href="avantador.html"><h2>See More</h2></a>
+            </div>
+            <div class="image-wrapper">
+                <img class="image" src="https://media.zigcdn.com/media/content/2019/Feb/evo-spyder-thumb.jpg" alt="Image 2">
+                <a class="button" href="huracan.html"><h2>See More</h2></a>
+            </div>
+        </div>
+    </main>
+    <h1 id="suv">SUVs Lamborghini :</h1><br> 
+    <main><br><br>
+        <div class="container">
+            <div class="image-wrapper" id="urus">
+                <img class="image" src="https://car-images.bauersecure.com/wp-images/153762/uruss_050.jpg" alt="Image 1">
+                <a class="button" href="urus.html"><h2>See More</h2></a>
+            </div>
+        </div>
+    </main><br>
+    <footer id="contact-us">
+        <div class="contact-section">
+          <h2 align="center">Contact Us :</h2>
+          <ul>
+            <li><h3> Email:</h3><a href="mailto:moaad.za12@gmail.com" target="_blank">moaad.za12@gmail.com</a></li>
+            <li><h3> Phone:</h3><a href=""> +212 670-295382</a></li>
+            <li><h3> Location:</h3><a href="https://www.google.com/maps/place/Hay+Riad,+Rabat/@33.9592644,-6.8767259,17.2z/data=!4m6!3m5!1s0xda7132b7118bfbd:0x2f9cad14202306ec!8m2!3d33.9559463!4d-6.8726295!16s%2Fg%2F1tf7ny0v" target="_blank"> 123 Hay Riad St, Rabat, Morocco</a></li>
+          </ul>
+        </div>
+        <div class="social-media-section">
+          <h3>Follow Us :</h3>
+          <ul>
+            <li><a href="https://web.facebook.com/profile.php?id=100009177196891" target="_blank"><i class="fab fa-facebook"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1024px-2021_Facebook_icon.svg.png" alt="facebook"></i></a></li>
+            <li><a href="https://instagram.com/mouad__zaouia?igshid=OTk0YzhjMDVlZA==" target="_blank"><i class="fab fa-twitter"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="twitter"></i></a></li>
+            <li><a href="https://twitter.com/ZaouiaMoaad?t=SysV_3e01MzFj32zhAqJIQ&s=09" target="_blank"><i class="fab fa-instagram"><img src="https://www.aps.edu/sapr/images/pnglot.comtwitterbirdlogopng139932.png/image_preview" alt="Instagram"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+        </body><script src="C:\Users\hp\Desktop\Project.html.css.js\script.js"></script>
+        </html>
