@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+</head>
+	<style>
+body {
+	background-image: url(https://cutewallpaper.org/25/bbt-car-hd-wallpaper/231973839.jpg);
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.form {
+  position: absolute;
+  top: 120px;
+  width: 380px;
+  height: 350px;
+  left: 34%;
+  background-color: #fff;
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container input, .form button {
+  outline: none;
+  border: 1px solid #e5e7eb;
+  margin: 8px 0;
+}
+
+.input-container input {
+  background-color: #fff;
+  padding: 1rem;
+  padding-right: 3rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 300px;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.input-container #pass {
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  left: 0;
+}
+
+.input-container span svg {
+  color: #9CA3AF;
+  width: 1rem;
+  height: 1rem;
+}
+
+.submit {
+  display: block;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: #4F46E5;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+.submit:hover {
+  color: #639;
+  background-color: white;
+  border: 1px dashed #639;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.signup-link {
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+.signup-link a {
+  text-decoration: underline;
+  color: #4F46E5;
+}
+.signup-link:hover a {
+  text-decoration: underline;
+  color: greenyellow;
+}
+nav {
+  position: fixed;
+  background-color: rgb(22, 34, 59);
+  top: 0px;
+  height: 80px;
+  width: 100%;
+  z-index: 999;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+li img {
+    position: relative;
+    left: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+ul a img {
+    position: relative;
+    color: rgb(22, 34, 59);
+    top: 8px;
+    height: 200px;
+    width: 350px;
+}
+button a img {
+    position: relative;
+    color: rgb(22, 34, 59);
+    top: 0px;
+    left: 5px;
+    height: 80px;
+    width: 300px;
+}
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  left: 10px;
+}
+
+nav input {
+  border: none;
+  padding: 8px;
+  width: 500px;
+  height: 25px;
+  right: 0px;
+  border-radius: 4px;
+}
+
+nav .search button {
+  position: relative;
+  background: none;
+  border: none;
+  top: 8px;
+  right: 55px;
+  cursor: pointer;
+}
+nav button {
+    position: relative;
+  background: none;
+  border: none;
+  top: 5px;
+  right: 40px;
+  cursor: pointer;
+}
+nav button img {
+    position: relative;
+    width: 50px;
+    height: 40px;
+}
+li a {
+    display: block;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+li:hover a {
+    display: block;
+    background-color: black;
+    width: 100%;    
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li:hover ul.dropdown {
+    display: list-item;
+    width: 100px;
+    height: 20px;
+}
+ul.dropdown li a {
+    background-color: rgb(22, 34, 59);
+    width: 100px;
+	height: 20px;
+}
+ul.dropdown li:hover a {
+    background-color: black;
+    width: 100px;
+    height: 30px;
+}
+.m1{
+    border: 5px black solid;
+}
+.img {
+    width: 40px;
+    height: 28px;
+}
+#pass input {
+  position: relative;
+  top: 86%;
+  right: 44%;
+}
+#pass h5{
+  position: relative;
+  top: 4%;
+  left: 10%;
+}
+	</style>
+<body background="https://cdn.wallpapersafari.com/47/9/3f6Vzk.jpg">
+	<header>
+		<nav>
+		  <ul>
+			<a href="Untitled-1.html" id="a1"><img src="C:\Users\hp\Downloads\hhh-removebg-preview.png" alt=""></a>
+			<li>
+				<a href="#">Categorey ∇</a>
+				<ul class="dropdown">
+					<li><a href="Untitled-1.html.#no" >Normal Cars</a></li>
+					<li><a href="Untitled-1.html.#lu">Luxury Cars</a></li>
+					<li><a href="Untitled-1.html.#sup">Super Cars</a></li>
+				</ul>
+			<li><a href="Untitled-1.html.#contact-us"> Contact Us</a></li>
+			<div class="search" >
+					<form action="#" method="get">
+					<input type="text" name="search" placeholder="Search...">
+					<button type="submit"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAADy8vL8/PzY2Njj4+OZmZlDQ0McHBzx8fHd3d3g4OD39/eMjIxpaWlTU1PQ0NAQEBC4uLgkJCQ5OTmgoKAvLy+srKy+vr4VFRVhYWFcXFzExMR0dHSTk5MYGBiCgoJ8fHwpKSlLbtqKAAAEN0lEQVR4nO3c63qiMBAGYAQEUfAA6mptrXr/F7li11Yng0ASliH93r+lPDPmHAKeBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADASP0k8dO+o+hEEO6y+SLeFpNJsY0X82wXBn3HZFEYxSNGHC37jsyK5YnL7u60HHhR+hu29B6tN0nfUerzT6u6/G6ygeYYZI3S+8pxiHU13zdP8CrvO962kkWr/K4O475jbiVvm9/QivGsk+BodO477qb82hGiSuz3HXsj44tugqNRMYTGOG02BlZYTfuOv9bUJL+S9BTHRiV4I7ui+i/a4FuUzxL/Kpnl0Vv1dYXo7qaqFy2OIb00zIqKi2PBU7gzH/Lhnb/8/cBfL3dc5GcyC6X4foR8jlJnNwkX7Kqi/O7e2a5J6HKKm2x/1Lap4IMr9/8Rb2tcHf3T5B//DKSeBkx1a7jTtFT/cyJwy5FZ0Tceu8fq/2ZdxqqF6WZaTE6YFMWN++qeYavNULWiSivERGmFjTqZH2p3I6wQNzS+j7Z3UAaNTRdxagvWJLxV67llMCG3WHcRqDalGdXMZDjvRg25a7SfOejchM6JTnZjNEN//heT7WqhcU3vDo1Nqwg9jy6LtX6nbkTmrbBEW2JkN0oTZGlf6N5n+3yf2GaMRgLy2x91b0TntjaDNEKboXb7oYOOmIa4s/bTkxvt7MVohlSuN/07kSFRu7rbNn+Oy6ALJJ3y3F6MZsgvb7ADQXZCxHSmZLCY6d+J9FlSJt8pGcYMtgL95ztdhMzbfLI9b7B0JSNrIWQ/Kpl0leFEyDrf/Qzdr6Xu9zTujxa/YMR3f9bm/szb/dWT+ytguouh/VBF7C6G+ztRv2A30dKOMD16IqYZeh3t6u9tR2nC/Scz7j9d88yfkKaf5BZipt1fnH/K3cVJBSGr32/Onzahq/NSi5Uwc2JIWhEanvpSz8SJK0LrJ/ek7NA8cv70pTqtLNWfoE25E7SaE9uusaegJzWzmx0d6G+EnoLWOcnOv6a4MtiQ7NaZjbf12wiSX3+qeqNkmynd6jLbVlx8I7UU6SOMR4soD/3gyg/zqP4lWqmvP1l4s+tOakU1fjvvV6UotS2avCU7kBRT7TedFVIrqnd2P0WtLw6w3bDUiuolldOVKodkxqYothS9nL5d8NJnuVziX3SXm2J6bJ7gv6+3zNg/iq2o1xwbfqEm+z6fwuzXjORO4Eppk68oPZ6/GVpFLS1ffUppr3wJi50SyV1MfQkqv2bGrY35iiq4Ld6Fu+M8Xl/KL9Jd1vH8uKtc+Q+uu3kSpL6f1m1O8W1R0uNSY3wpOpUi2xYFPdW3gJnAuZUg0xZdS1CpqGJOuFk0drsES9O94wk+TOBcTfC7orrYBu9ug4a7JVi6DhpuJ3hN0fUEAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgwP4Celgqs7S97q0AAAAASUVORK5CYII=" alt="" class="img"></button>
+				</form>
+			</div>
+      <button ><a href="C:\Users\hp\Desktop\Project.html.css.js\login.html"><img src="https://flaticons.net/icon.php?slug_category=application&slug_icon=user-login" alt="Login"></a></button>
+		  </ul>
+		</nav>
+	</header>  
+
+  <form class="form">
+    <p class="form-title">LOGIN</p>
+     <div class="input-container">
+       <input placeholder="Enter email:******@gmail.com" type="email">
+   </div>
+   <div class="input-container">
+       <input placeholder="Enter password" type="password" id="myInput">
+   </div>
+        <input type="checkbox" onclick="myFunction()"> Show Password
+      <button class="submit" type="submit">
+     Sign in
+   </button>
+
+   <p class="signup-link">
+     No account?
+     <a href="SIGN UP.html">Sign up</a>
+   </p>
+</form>
+<script src="C:\Users\hp\Desktop\Project.html.css.js\password.js"></script>
+</body>
+</html>
